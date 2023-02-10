@@ -10,10 +10,10 @@ let xiaomi:Mobile = new Mobile("Xiaomi Redmi 10", "Xiaomi", "Redmi 10","Green", 
 let mobileArray: Mobile[] = [iPhone, samsung, huawei, xiaomi];
 let myCollection: MobileCollection = new MobileCollection(mobileArray,0);
 
-console.log(myCollection.getMobiles());
-console.log(myCollection.getTotalPrice());
+//console.log(myCollection.getMobiles());
+//console.log(myCollection.getTotalPrice());
 
 //console.log(myCollection.setTotalPrice(500));
 
-
+myCollection.printCollection();
 

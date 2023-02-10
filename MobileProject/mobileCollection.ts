@@ -33,5 +33,20 @@ export class MobileCollection{
             totalPrice += this.mobiles[i].getPrice()
         }
         return totalPrice
-    }
+    };
+
+    public printCollection():void{
+        let printCollection:string = "";
+        for(let i = 0; i < this.mobiles.length; i++){
+            printCollection += "The characteristics of the mobile " + this.mobiles[i].getName() + " are:" +
+                                "\n·Name: " + this.mobiles[i].getName() +   
+                                "\n·Trademark: " + this.mobiles[i].geTrademark() +
+                                "\n·Model. " + this.mobiles[i].getModel() + 
+                                "\n·Color: " + this.mobiles[i].getColor() + 
+                                "\n·Price: " + this.mobiles[i].getPrice();
+        }printCollection += "\nPrice overall: " + this.getTotalPrice()
+        console.log(printCollection);
+        
+    };
+    
 }
