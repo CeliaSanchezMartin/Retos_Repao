@@ -50,4 +50,14 @@
     public setPrice(newPrice:number):void{
         this.price = newPrice;
     };
+
+    //Método que imprima las características.
+    public printCaracteristics():void{
+        console.log("The characteristics of the mobile name are:"+
+                    "\n·Name: " + this.name +   //Pregunta para correccion: aqui deberia poner los getters de cada atributo?¿?
+                    "\n·Trademark: " + this.trademark +
+                    "\n·Model. " + this.model + 
+                    "\n·Color: " + this.color + 
+                    "\n·Price: " + this.price);
+    };
  }
