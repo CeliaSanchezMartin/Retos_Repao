@@ -16,7 +16,7 @@ function hasEven(myNums:number[]){
 };
 
 //Test hsEven.
-console.log(hasEven([1, 3, 2, 7]));
+//console.log(hasEven([1, 3, 2, 7]));
 
 // 3. Función que devuelva true si todos los nombres empiezan por M.
 
@@ -34,4 +34,4 @@ function startwhithM(myNames: string[]){;
 
 //Test startWhitM.
 
-console.log(startwhithM(["Maria", "tarta"]));
+//console.log(startwhithM(["Maria", "tarta"]));

@@ -35,7 +35,7 @@ function zodiac(day:number, month:number){
 };
 //Test Zodiac.
 
-console.log(zodiac(30, 4)); //It Works!
+//console.log(zodiac(30, 4)); //It Works!
 
 //2. Realiza un procedimiento dado el nombre de un pais te imprima el continente en el que estás.
 function continent(country:string){
@@ -66,11 +66,11 @@ function continent(country:string){
 };
 
 //Test continent.
-continent("Japan");
+//continent("Japan");
 
 //4. Funcion  que devuelva si un numero es par o impar
 
-function isEven(number:number){
+ export function isEven(number:number){
     let result:string = "";
     if (number % 2 == 0){
         result = "even";
@@ -85,4 +85,4 @@ function isEven(number:number){
 
 //Test isEven
 
-isEven(1);
+//isEven(1);
