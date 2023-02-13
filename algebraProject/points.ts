@@ -56,4 +56,19 @@ export class Point{
 
         return quadrant;
     };
+
+    //Calcular el punto más cercano.
+    public calculateNearest(points:Point[]):Point{
+        let distance:number = this.calculateDistance(points[0]);
+        let nearest:Point = points[0];
+
+        for(let i:number = 0; i < points.length; i++){
+            let myDistance = this.calculateDistance(points[i])
+            if(myDistance < distance){
+                distance = myDistance;
+                nearest = points[i]
+            }
+        }
+        return nearest;
+    }
 };
