@@ -21,6 +21,14 @@ export class Point{
         return this.y
     };
 
+    //Setters.
+    public setX(newX:number):void{
+        this.x = newX;
+    };
+
+    public setY(newY:number):void{
+        this.y = newY;
+    };
     //Método toString.
 
     public toString():string{
