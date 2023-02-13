@@ -7,4 +7,9 @@ console.log(myPoint.getX());
 console.log(myPoint.getY());
 console.log(myPoint.toString());
 
+console.log(myPoint.distanceToOrigin());
+
+let myPoint2:Point = new Point(0, 0);
+console.log(myPoint.calculateDistance(myPoint2));
+
 
