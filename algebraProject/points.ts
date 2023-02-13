@@ -38,4 +38,22 @@ export class Point{
         return Math.sqrt((this.getX()-anotherPoint.getX()) * (this.getX()-anotherPoint.getX()) +
         (this.getY()-anotherPoint.getY()) * (this.getY()-anotherPoint.getY()))
     };
-}
+
+    //Cálculo cuadrante.
+    public calcularQuadrant():number{
+        let quadrant: number = 0;
+        if(this.x == 0 && this.y == 0){
+            quadrant =  0
+        } else if (this.x > 0 && this.y > 0){
+            quadrant = 1;
+        } else if(this.x < 0 && this.y > 0){
+            quadrant = 2;
+        } else if (this.x < 0 && this.y < 0){
+            quadrant = 3;
+        } else if (this.x > 0 && this.y < 0){
+            quadrant = 4;
+        };
+
+        return quadrant;
+    };
+};
