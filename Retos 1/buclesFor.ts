@@ -4,7 +4,7 @@
 
 function evenNumbers(num:number){
     let result: number[] = [];
-    for(let i = 0; i < num +1; i ++){
+    for(let i:number = 0; i < num +1; i ++){
         if( i % 2 !== 0){
         result.push(i)
     }};
@@ -19,7 +19,7 @@ function evenNumbers(num:number){
 
 function myRevert(myArr: number[]){
     let result:number[] = [];
-    for(let i = myArr.length -1; i >= 0; i--){
+    for(let i:number = myArr.length -1; i >= 0; i--){
         result.push(myArr[i])
     };
     return result;
@@ -33,10 +33,10 @@ function myRevert(myArr: number[]){
 let rainbow: string[] = ["yellow", "orange", "red", "brown", "green", "blue","pink", "purple"]
 function isRainbow(colors: string[]){
     let result:boolean;
-    for(let i = 0; i < colors.length; i++){
+    for(let i:number = 0; i < colors.length; i++){
         result = false;
 
-        for(let j = 0; j < rainbow.length; j++){
+        for(let j:number = 0; j < rainbow.length; j++){
             if ( colors[i] == rainbow[j]){
                 result = true
             }
